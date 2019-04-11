@@ -28,4 +28,9 @@ public with sharing class RestaurantFinder {
         e.WhoId = contactId;
         insert e;
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Event> pastAppointments(Id contactId){
+        return [select Subject, Location, StartDateTime from Event where WhoId =: contactId];
+    }
 }
