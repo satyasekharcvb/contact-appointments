@@ -1,10 +1,12 @@
 {
-  "orgName": "ssekhar Company",
+  "orgName": "ssekharOrg",
   "edition": "Developer",
-  "features": [],
+  "hasSampleData": "false",
   "settings": {
-    "orgPreferenceSettings": {
-      "s1DesktopEnabled": true
-    }
+      "orgPreferenceSettings": {
+          "s1DesktopEnabled": true,
+          "selfSetPasswordInApi": true,
+          "s1EncryptedStoragePref2": false
+      }
   }
 }
