@@ -1,0 +1,15 @@
+<template>
+    <template if:true={showMap}>
+        <lightning-map
+            map-markers={mapMarkers}
+        ></lightning-map>
+        <lightning-input type="datetime" name="appointmentStart" label="Enter a date/time value" onchange={handleChange} ></lightning-input>
+        <lightning-input type="number" name="duration" label="Enter duration" onchange={handleChange}></lightning-input>
+        <lightning-button label="Book" variant="brand" title="Submit" onclick={handleClick}></lightning-button>
+    </template>
+    <template if:false={showMap}>
+        <img src={emptyURL}/><br/>
+        Please choose a restaurant
+    </template>
+    
+</template>
