@@ -1,0 +1,20 @@
+<template>
+        <lightning-card  title="Nearest Restaurants">  
+        <template if:true={restaurantsList.data}>
+            <template for:each={restaurantsList.data} for:item=restaurant>
+                <lightning-tile key={restaurant.id} label={restaurant.name} href="#" type="media" 
+                 data-lat={restaurant.coordinates.latitude} data-lon={restaurant.coordinates.longitude}
+                 data-name={restaurant.name} onclick={handleClick}>
+                    <lightning-avatar slot="media" src={restaurant.image_url}  alternative-text="Bruce Wayne" size="large"></lightning-avatar>
+                    <ul class="slds-list_horizontal slds-has-dividers_right">
+                        <li class="slds-item">300m - 4&starf;</li>
+                    </ul>
+                </lightning-tile>
+            </template>
+        </template>
+        <template if:true={restaurantsList.error}>
+                {restaurantsList.error}
+        </template>
+    </lightning-card>
+    
+</template>
