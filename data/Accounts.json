@@ -1,0 +1,22 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "Alpha Dynamics",
+            "Type": "Technology Partner",
+            "Phone": "3362227000"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Madison Investments",
+            "Type": "Customer - Direct",
+            "Phone": "7227003362"
+        }
+    ]
+}

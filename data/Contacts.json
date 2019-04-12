@@ -1,0 +1,34 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "FirstName": "John",
+            "LastName": "Smith",
+            "MailingStreet": "415 Mission St",
+            "MailingCity": "San Francisco",
+            "MailingState": "CA",
+            "MailingPostalCode": "94105",
+            "MailingCountry": "USA",
+            "MailingLatitude": "37.7899008",
+            "MailingLongitude": "-122.3991029"
+        },
+        {
+            "attributes": {
+                "type": "Contact",
+                "referenceId": "ContactRef2"
+            },
+            "AccountId": "@AccountRef2",
+            "FirstName": "Mary",
+            "LastName": "Brown",
+            "MailingStreet": "480 Trapelo Road",
+            "MailingCity": "Belmont",
+            "MailingState": "MA",
+            "MailingPostalCode": "02478",
+            "MailingCountry": "USA"
+        }
+    ]
+}
